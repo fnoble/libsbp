@@ -29,14 +29,14 @@
 typedef struct __attribute__((packed)) {
   u32 tow;    /**< Milliseconds since start of GPS week [ms] */
   u16 wn;     /**< GPS week number [week] */
-} gps_time_t;
+} obs_gps_time_t;
 
 
 /** None
  
  */
 typedef struct __attribute__((packed)) {
-  gps_time_t t;        /**< GPS time of this observation. */
+  obs_gps_time_t t;        /**< GPS time of this observation. */
   u8 n_obs;    /**< Total number of observations. First nibble is the size
 of the sequence (n), second nibble is the zero-indexed
 counter (ith packet of n)

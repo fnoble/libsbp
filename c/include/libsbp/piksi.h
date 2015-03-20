@@ -202,6 +202,7 @@ typedef struct __attribute__((packed)) {
   float tx_throughput;      /**< UART transmit throughput. [kB/s] */
   float rx_throughput;      /**< UART receive throughput. [kB/s] */
   u16 crc_error_count;    /**< UART CRC error count. */
+  u16 io_error_count;    /**< UART IO error count. */
   u8 tx_buffer_level;    /**< UART transmit usage percentage. [Utilization % /255] */
   u8 rx_buffer_level;    /**< UART receive usage percentage. [Utilization % /255] */
 } uart_channel_t;
